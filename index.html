@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RSD Nexus Showcase</title>
+<meta name="description" content="RSD Nexus: a mobile CRM for real-estate sales teams. Lead ingestion, hierarchy-based assignment, a staged pipeline, site visits and daily planning.">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <div>
+    <div class="brand"><img src="assets/logo.png" alt="RSD Nexus logo"> RSD NEXUS</div>
+    <h1>A CRM built for the way real-estate sales teams actually work.</h1>
+    <p>RSD Nexus, built for Radhaswami Developers, takes a Meta Ads lead from spreadsheet to booked site visit. It assigns leads down a sales hierarchy, guides each one through a strict pipeline and keeps every decision auditable.</p>
+    <div class="pills"><span class="pill">Flutter</span><span class="pill">Firebase</span><span class="pill">Role-based</span><span class="pill">Android · iOS · Web</span></div>
+  </div>
+  <div class="phones">
+    <div class="phone"><img src="assets/screens/04-dashboard.webp" alt="BOD dashboard with lead metrics" loading="eager"></div>
+    <div class="phone"><img src="assets/screens/03-leads.webp" alt="Leads list with status chips" loading="eager"></div>
+  </div>
+</div></header>
+
+<section id="features"><div class="wrap">
+  <h2>What it does</h2>
+  <p class="lead">Every screen follows the same four-tab layout for every role: Dashboard, Gallery, Leads, More. What each user sees depends on where they sit in the hierarchy.</p>
+  <div class="grid">
+    <div class="card"><h3>Lead ingestion</h3><p>Bulk upload from Excel/CSV or add a single lead. Duplicates are detected by phone number and flagged for review instead of silently dropped.</p></div>
+    <div class="card"><h3>Hierarchy &amp; assignment</h3><p>Leads flow down the chain, and everyone sees their own leads plus their whole reporting sub-tree. The full assignment trail is tracked.</p></div>
+    <div class="card"><h3>Key-based onboarding</h3><p>New joiners sign up with their manager's key and phone OTP, then wait for an approval gate before they get access.</p></div>
+    <div class="card"><h3>Staged pipeline</h3><p>New to Booked, one step at a time, with a note at key stages. Every change is written to an append-only status log.</p></div>
+    <div class="card"><h3>Site visits &amp; gallery</h3><p>Schedule visits, get a reminder the day before, and attach visit photos to a company-wide searchable gallery.</p></div>
+    <div class="card"><h3>Daily plan</h3><p>Each user sets call, visit-conversion and site-visit targets plus a task checklist, with optional morning and evening reminders.</p></div>
+    <div class="card"><h3>Executive oversight</h3><p>BOD gets an All Leads register, a rollback approval queue and a team view with per-branch lead counts.</p></div>
+    <div class="card"><h3>Safe by design</h3><p>Soft-deleted leads keep an audit trail, backwards status moves need approval, and security rules back up the client checks.</p></div>
+  </div>
+</div></section>
+
+<section id="pipeline" style="background:var(--card)"><div class="wrap">
+  <h2>Roles &amp; pipeline</h2>
+  <p class="lead">A tree of roles, and a lead lifecycle that can't skip steps.</p>
+  <div class="roles"><span class="step">BOD</span><span class="arrow">→</span><span class="step">TL</span><span class="arrow">→</span><span class="step">SP</span><span class="arrow">→</span><span class="step">SE</span></div>
+  <br>
+  <div class="flow">
+    <span class="step">New</span><span class="arrow">→</span><span class="step">Contacted</span><span class="arrow">→</span>
+    <span class="step alt">Genuine</span><span class="arrow">→</span><span class="step">Visit Scheduled</span><span class="arrow">→</span><span class="step">Visit Done</span><span class="arrow">→</span><span class="step">Negotiation</span><span class="arrow">→</span><span class="step alt">Booked</span>
+    <span class="arrow">·</span><span class="step bad">Lost</span>
+  </div>
+  <p class="note">Leads that aren't ready go back to follow-up with a 3- or 6-month reminder. Leads that aren't interested are soft-deleted but kept for reporting.</p>
+</div></section>
+
+<section id="screens"><div class="wrap">
+  <h2>Screens</h2>
+  <p class="lead">Taken from the BOD (director) account on a test dataset. Names, phone numbers, photos and sign-up keys are blurred.</p>
+  <div class="shots">
+    <figure><div class="phone"><img src="assets/screens/04-dashboard.webp" alt="Dashboard" loading="lazy"></div><figcaption>Dashboard: intake, distribution and the direct portfolio</figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/03-leads.webp" alt="Leads" loading="lazy"></div><figcaption>Leads: search, stage filters and ownership</figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/02-more-menu.webp" alt="More menu" loading="lazy"></div><figcaption>More: executive actions and operations</figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/05-all-leads.webp" alt="All leads register" loading="lazy"></div><figcaption>All Leads register: genuine, not ready, not interested</figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/06-approvals.webp" alt="Approvals" loading="lazy"></div><figcaption>Approvals &amp; gating for new sign-ups</figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/07-daily-plan.webp" alt="Daily plan" loading="lazy"></div><figcaption>Daily plan: targets and tasks</figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/10-team.webp" alt="Team hierarchy" loading="lazy"></div><figcaption>Team hierarchy with per-branch lead counts</figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/08-settings.webp" alt="Settings" loading="lazy"></div><figcaption>Settings: theme, text size and reminders</figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/09-settings-key.webp" alt="Team key" loading="lazy"></div><figcaption>Personal team key: copy, share, regenerate</figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/01-splash.webp" alt="Splash screen" loading="lazy"></div><figcaption>Animated splash</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="tech" style="background:var(--card)"><div class="wrap">
+  <h2>Under the hood</h2>
+  <p class="lead">One Flutter codebase on a serverless Firebase backend.</p>
+  <div class="tech">
+    <span>Flutter / Dart</span><span>Riverpod</span><span>go_router</span><span>Cloud Firestore</span><span>Firebase Auth (phone OTP)</span>
+    <span>Cloud Functions</span><span>Cloud Storage</span><span>Cloud Messaging</span><span>Firestore security rules + tests</span><span>Emulator-based dev</span>
+  </div>
+  <p class="note">The brand palette: Charcoal <b>#363636</b>, Deep Forest <b>#176445</b>, Emerald <b>#108D54</b>, Leaf <b>#86BE57</b>. It follows a 60/30/10 split and passes WCAG contrast checks, in both light and dark themes.</p>
+</div></section>
+
+<footer><div class="wrap">RSD Nexus, built for Radhaswami Developers. This is a showcase page: the source code, configuration and real data stay private.</div></footer>
+</body>
+</html>
