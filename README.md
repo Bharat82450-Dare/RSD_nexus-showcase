@@ -116,4 +116,4 @@ Version 1.0.0. In active development: the core CRM modules above are built, and 
 
 ## Contact
 
-Built by **Bharat Sarkar**. For access to the source code or a demo, get in touch through GitHub.
+For access to the source code or a demo, get in touch through this GitHub account.
